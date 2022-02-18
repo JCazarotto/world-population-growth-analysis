@@ -7,5 +7,5 @@ Projeto desenvolvido em Python, utilizando as seguintes bibliotecas:
 <br>
 
 <div align="center">
-	<img src="" alt="Dashboard PlotLy"/>
+	<img src="https://github.com/JCazarotto/world-population-growth-analysis/blob/main/dashboard.png" alt="Dashboard PlotLy"/>
 </div>
