@@ -10,26 +10,26 @@ tabela = tabela.dropna(subset=['incomeLevel'])
 tabela = tabela.sort_values(by=['year'], ascending=True)
 print(tabela)
 
-fig = px.choropleth(tabela,                            # Input Dataframe
-                     locations="iso3c",           # identify country code column
-                     color="population",                     # identify representing column
-                     hover_name="country",              # identify hover name
-                     animation_frame="year",        # identify date column
-                     projection="natural earth",        # select projection
-                     color_continuous_scale = 'Reds',  # select prefer color scale
-                     labels={"iso3c": 'ISO Code',
-                             "year": 'Year',
-                             "population": 'Population'},
-                     range_color=[3000000,300000000] # select range of dataset
-                     )
+fig = px.choropleth(tabela,
+                    locations="iso3c",           # identify country code column
+                    color="population",                     # identify representing column
+                    hover_name="country",              # identify hover name
+                    animation_frame="year",        # identify date column
+                    projection="natural earth",        # select projection
+                    color_continuous_scale='Reds',  # select prefer color scale
+                    labels={"iso3c": 'ISO Code',
+                            "year": 'Year',
+                            "population": 'Population'},
+                    range_color=[3000000, 300000000]  # select range of dataset
+                    )
 fig.update_layout(
-    title_text = 'World Growth Population: 1960-2018',
-    title_font_family = 'Arial',
-    title_font_size = 30,
-    title_x = 0.5,
+    title_text='World Growth Population: 1960-2018',
+    title_font_family='Arial',
+    title_font_size=30,
+    title_x=0.5,
     geo=dict(
-        showframe = False,
-        showcoastlines = True,
+        showframe=False,
+        showcoastlines=True,
     ))
 fig.layout.updatemenus[0].buttons[0].args[1]['frame']['duration'] = 100
 fig.layout.updatemenus[0].buttons[0].args[1]['transition']['duration'] = 20
