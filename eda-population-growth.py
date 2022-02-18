@@ -36,4 +36,3 @@ fig.layout.updatemenus[0].buttons[0].args[1]['transition']['duration'] = 20
 fig.update_geos(resolution=110)
 
 fig.show()
-fig.write_html("example_map.html")
