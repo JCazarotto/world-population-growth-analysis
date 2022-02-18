@@ -4,7 +4,6 @@ Projeto desenvolvido em Python, utilizando as seguintes bibliotecas:
 * Tratamento dos dados: Pandas
 * Visualização dos dados: Plotly
 <br>
-<br>
 <div align="center">
 	<img src="https://github.com/JCazarotto/world-population-growth-analysis/blob/main/dashboard.png" alt="Dashboard PlotLy"/>
 </div>
