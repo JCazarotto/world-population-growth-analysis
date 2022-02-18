@@ -1,4 +1,4 @@
-* Mapa interativo que mostra a evolução da população mundial entre 1960 e 2018.
+Mapa interativo que mostra a evolução da população mundial entre 1960 e 2018.
 
 Projeto desenvolvido em Python, utilizando as seguintes bibliotecas:
 * Tratamento dos dados: Pandas
